@@ -12,6 +12,6 @@ steps:
 
   - name: 'bash'
     args: ['echo', 'Hello world!']
-    logsBucket: 'gs://testingpurpose/logs'
+    logsBucket: 'testingpurpose/logs'
     options:
        logging: GCS_ONLY
