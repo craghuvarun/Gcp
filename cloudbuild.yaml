@@ -14,4 +14,4 @@ steps:
     entrypoint: bash
     args: ["echo", "Hello world!"]
 options:
-  logging: GCS_ONLY
+    logging: GCS_ONLY
