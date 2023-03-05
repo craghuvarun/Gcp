@@ -8,7 +8,7 @@ steps:
   - name: python
     entrypoint: python
     args: ["/*.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
-    dir: "gs://testingpurpose/logs/python"
+    
 
   - name: bash
     entrypoint: bash
