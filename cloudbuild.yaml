@@ -14,4 +14,4 @@ steps:
     args: ['echo', 'Hello world!']
   logsBucket: 'gs://testingpurpose/logs'
   options:
-     logging: GCS_ONLY
+    logging: GCS_ONLY
