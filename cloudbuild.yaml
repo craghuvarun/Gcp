@@ -9,8 +9,8 @@ steps:
   - name: python
     args:
       - testcomposer.py
-      - '--dags_directory=${_DAGS_DIRECTORY}'
-      - '--dags_bucket=${_DAGS_BUCKET}'
+      - '--dags_directory=us-central1-example-environ-04ac8194-bucket/dags'
+      - '--dags_bucket=us-central1-example-environ-04ac8194-bucket/dags'
     entrypoint: python
   - name: bash
     args:
