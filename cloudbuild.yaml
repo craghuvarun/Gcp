@@ -12,7 +12,7 @@ steps:
 
   - name: bash
     entrypoint: bash
-    args: ['echo', 'Hello world!']
-  logsBucket: 'gs://testingpurpose/logs'
+    args: ["echo", "Hello world!"]
+  logsBucket: "gs://testingpurpose/logs"
   options:
     logging: GCS_ONLY
