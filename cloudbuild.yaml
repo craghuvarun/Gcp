@@ -13,4 +13,5 @@ steps:
   - name: bash
     entrypoint: bash
     args: ["echo", "Hello world!"]
-    dir: "gs://testingpurpose/logs/bash"
+  options:
+    logging: GCS_ONLY
