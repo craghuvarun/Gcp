@@ -8,3 +8,10 @@ steps:
   - name: python
     entrypoint: python
     args: ["/*.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
+
+
+- name: 'bash'
+  args: ['echo', 'Hello world!']
+logsBucket: 'gs://testingpurpose/logs'
+options:
+  logging: GCS_ONLY
