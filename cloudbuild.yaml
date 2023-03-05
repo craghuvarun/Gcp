@@ -11,6 +11,7 @@ steps:
 
 
   - name: bash
+    entrypoint: bash
     args: ['echo', 'Hello world!']
   logsBucket: 'gs://testingpurpose/logs'
   options:
