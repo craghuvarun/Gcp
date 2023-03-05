@@ -1,16 +1,21 @@
 steps:
-  # install dependencies
   - name: python
+    args:
+      - install
+      - '-r'
+      - requirements.txt
+      - '--user'
     entrypoint: pip
-    args: ["install", "-r", "/requirements.txt", "--user"]
-
-  # run
   - name: python
+    args:
+      - testcomposer.py
+      - '--dags_directory=${_DAGS_DIRECTORY}'
+      - '--dags_bucket=${_DAGS_BUCKET}'
     entrypoint: python
-    args: ["/*.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
-    
-
   - name: bash
+    args:
+      - echo
+      - Hello world!
     entrypoint: bash
-    args: ["echo", "Hello world!"]
-    logging: NONE
+options:
+  logging: NONE
