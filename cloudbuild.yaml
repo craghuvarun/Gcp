@@ -10,7 +10,7 @@ steps:
     args: ["/*.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
 
 
-  - name: 'bash'
+  - name: bash
     args: ['echo', 'Hello world!']
   logsBucket: 'gs://testingpurpose/logs'
   options:
