@@ -12,10 +12,6 @@ steps:
       - '--dags_directory=dags'
       - '--dags_bucket=us-central1-example-environ-04ac8194-bucket'
     entrypoint: python
-  - name: bash
-    args:
-      - echo
-      - Hello world!
-    entrypoint: bash
+  
 options:
   logging: CLOUD_LOGGING_ONLY
