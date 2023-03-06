@@ -9,7 +9,7 @@ steps:
   - name: python
     args:
       - testcomposer.py
-      - '--dags_directory=/dags'
+      - '--dags_directory=dags'
       - '--dags_bucket=us-central1-example-environ-04ac8194-bucket'
     entrypoint: python
   - name: bash
@@ -18,4 +18,4 @@ steps:
       - Hello world!
     entrypoint: bash
 options:
-  logging: NONE
+  logging: GCS_ONLY
