@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators import GoogleCloudStorage
+from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorage
 
 # Define the start date for the DAG
 start_date = datetime(year=2023, month=3, day=5)
