@@ -7,7 +7,7 @@ steps:
   # run
   - name: python
     entrypoint: python
-    args: ["*.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
+    args: ["testcomposer.py.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
 
   
 options:
